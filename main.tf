@@ -7,7 +7,7 @@ resource "aws_s3_bucket" "waltteri_practise" {
   }
 }
 
-# hoitaa bucketin versiot
+# pitää bucketin tiedostojen vanhat versiot tallessa
 resource "aws_s3_bucket_versioning" "waltteri_practise" {
   bucket = aws_s3_bucket.waltteri_practise.id
   versioning_configuration {
